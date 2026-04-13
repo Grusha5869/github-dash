@@ -2,7 +2,6 @@
 import { GitHubUser, GitHubRepository, GitHubEvent } from "@/types/githubTypes"
 const GITHUB_API_BASE = 'https://api.github.com';
 
-// Универсальная функция для всех запросов к GitHub API
 async function githubFetch<T>(
   endpoint: string,
   options?: RequestInit
@@ -17,7 +16,7 @@ async function githubFetch<T>(
       ...(token && { Authorization: `Bearer ${token}` }),
       ...options?.headers,
     },
-    next: { revalidate: 3600 }, // Кешируем ответ от сервера Next.js на 1 час
+    next: { revalidate: 3600 }, // кеширование ответа на сервер
   });
 
   if (!res.ok) {
@@ -28,21 +27,17 @@ async function githubFetch<T>(
   return res.json();
 }
 
-// --- Функции для твоего дашборда ---
-
 // Получение информации о пользователе
 export async function getUser(username: string) {
   return githubFetch<GitHubUser>(`/users/${username}`);
 }
 
-// Получение списка репозиториев пользователя
+// Получение списка репозиториев
 export async function getUserRepos(username: string) {
-  // sort=updated: сначала недавно обновленные
-  // per_page=100: максимум репозиториев за один запрос
   return githubFetch<GitHubRepository[]>(`/users/${username}/repos?sort=updated&per_page=100`);
 }
 
-// Получение последних событий пользователя (например, PushEvent для подсчета коммитов)
+// Получение последних событий пользователя
 export async function getUserEvents(username: string) {
   return githubFetch<GitHubEvent[]>(`/users/${username}/events?per_page=100`);
 }

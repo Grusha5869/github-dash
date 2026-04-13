@@ -1,2 +1,5 @@
 export { default as SearchBtn } from "./buttons/SearchBtn"
 export { default as UserContainer } from "./container/UserContainer"
+export { default as Profile } from "./userPage/Profile"
+export { default as Statistic } from "./userPage/Statistic"
+export { default as TopRepos } from "./userPage/TopRepos"

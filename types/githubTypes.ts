@@ -1,5 +1,3 @@
-// types/github.ts
-
 export interface GitHubUser {
   login: string;
   name: string | null;
