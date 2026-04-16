@@ -10,6 +10,15 @@
   --accent-green: #1f883d;
   --accent-red: #cf222e;
   --border: #d0d7de;
+
+  /* Подбор цветов для топа репозиториев */
+  --rank-1: #D4A017;
+  --rank-2: #78909C;
+  --rank-3: #B85C1A;
+  --rank-4: #1976D2;
+  --rank-5: #8E24AA;
+  --rank-6: #00796B;
+  --rank-7: #D84315;
 }
 
 .dark {
@@ -21,6 +30,14 @@
   --accent-green: #3fb950;
   --accent-red: #f85149;
   --border: #30363d;
+
+  --rank-1: #F7D44A;
+  --rank-2: #B0BEC5;
+  --rank-3: #D9A066;
+  --rank-4: #64B5F6;
+  --rank-5: #BA68C8;
+  --rank-6: #4DB6AC;
+  --rank-7: #FF8A65;
 }
 
 body {
