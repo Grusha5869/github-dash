@@ -3,8 +3,6 @@
 import { GitHubRepository } from "@/types/githubTypes"
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 
-
-
 type LanguageChartProps = {
     userRepos: GitHubRepository[]
 }
@@ -15,7 +13,7 @@ type LangRes = {
 }
 
 export default function LanguageChart({ userRepos }: LanguageChartProps) {
-    const COLORS = ['#2E86AB', '#A23B72', '#F18F01', '#C73E1D', '#6A9C89'];
+    const COLORS: string[] = ['#2E86AB', '#A23B72', '#F18F01', '#C73E1D', '#6A9C89'];
     const langColl = new Map<string, number>();
 
     for (const elem of userRepos) {
@@ -31,8 +29,8 @@ export default function LanguageChart({ userRepos }: LanguageChartProps) {
     }).sort((a, b) => b.value - a.value).splice(0, 5)
 
     return (
-        <ResponsiveContainer width="40%" height="100%">
-            <PieChart>
+        <div className="margin-auto-0">
+            <PieChart width={300} height={300}>
             <Pie
                 data={langRes}
                 dataKey="value"
@@ -48,6 +46,6 @@ export default function LanguageChart({ userRepos }: LanguageChartProps) {
             </Pie>
             <Tooltip />
             </PieChart>
-        </ResponsiveContainer>
+        </div>
     );
 }
