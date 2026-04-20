@@ -1,5 +1,5 @@
 'use client';
-import { SearchBtn } from "@/components";
+import { SearchBtn, ThemeBtn } from "@/components";
 import { useRouter } from "next/navigation";
 import { SubmitEventHandler, useState } from "react";
 
@@ -23,6 +23,7 @@ export default function Home() {
         />
         <SearchBtn />
       </form>
+      <ThemeBtn />
     </div>
   );
 }

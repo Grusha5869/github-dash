@@ -19,6 +19,8 @@
   --rank-5: #8E24AA;
   --rank-6: #00796B;
   --rank-7: #D84315;
+
+  --transition-default: 0.3s;
 }
 
 .dark {
@@ -43,6 +45,7 @@
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  transition: var(--transition-default);
 }
 
 .p-25-15 {
@@ -51,4 +54,8 @@ body {
 
 .margin-auto-0 {
   margin: auto 0;
+}
+
+p, div, strong, ul, li {
+  transition: var(--transition-default);
 }
