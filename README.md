@@ -1,3 +1,12 @@
+# Github Dashboard
+## 🛠️ Технологии
+
+- TypeScript
+- Next.js
+- React
+- Zustand
+- JavaScript
+- tailwind
 
 ## Запуск проекта
 

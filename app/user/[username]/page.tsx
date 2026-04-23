@@ -1,5 +1,5 @@
 import { getUser, getUserRepos, getUserEvents } from "@/lib/githubApi"
-import { UserContainer, Profile, Statistic, TopRepos, LanguageChart, ActivityChart, ThemeBtn } from "@/components"
+import { UserContainer, Profile, Statistic, TopRepos, LanguageChart, ActivityChart, ThemeBtn, BackBtn } from "@/components"
 
 type PageProps = {
     params: Promise<{ username: string }>
@@ -38,7 +38,10 @@ export default async function Page({ params }: PageProps) {
                     userRepos={userRepos}
                 />
             </div>
-            <ThemeBtn />
+            <div className="absolute top-3 right-3 flex flex-col gap-2">
+                <ThemeBtn />
+                <BackBtn />
+            </div>
            
         </UserContainer>
     )

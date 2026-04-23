@@ -1,5 +1,5 @@
 'use client';
-import { SearchBtn, ThemeBtn } from "@/components";
+import { FormHome, ThemeBtn, MainContainer, InfoOpportunities } from "@/components";
 import { useRouter } from "next/navigation";
 import { SubmitEventHandler, useState } from "react";
 
@@ -14,16 +14,18 @@ export default function Home() {
   }
 
   return (
-    <div>
-      <form className="flex gap-2" onSubmit={event => searchSubmit(event)}>
-        <input 
-          type="text"
-          className="w-20 h-9 bg-amber-800" 
-          onChange={event => setValue(event.target.value)}
+    <MainContainer>
+      <div className="flex flex-col justify-center h-full">
+        <FormHome
+          setValue={setValue}
+          searchSubmit={searchSubmit}
         />
-        <SearchBtn />
-      </form>
-      <ThemeBtn />
-    </div>
+        <p className="text-[13px] pl-4">Популярные: gaearon  Grusha5869  octocat  vercel</p>
+        <div className="absolute top-3 right-3">
+          <ThemeBtn />
+        </div>
+        <InfoOpportunities />
+      </div>
+    </MainContainer>
   );
 }

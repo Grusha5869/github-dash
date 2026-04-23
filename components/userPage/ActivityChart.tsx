@@ -59,7 +59,7 @@ export default function ActivityChart({ userEvents }: ActivityChartProps) {
     }
     
     return (
-        <ResponsiveContainer width="80%" height={500}>
+        <ResponsiveContainer className="margin-auto-0" width="80%" height={500}>
             <LineChart data={filledData}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="date" />

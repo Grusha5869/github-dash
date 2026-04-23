@@ -8,6 +8,7 @@ export default function SearchBtn({ text = "Анализ" }: BtnProps) {
         <button 
           type="submit"
           className="border-2 p-1.5 rounded-md"
+          aria-label={text}
         >{text}</button>
     )
 }
