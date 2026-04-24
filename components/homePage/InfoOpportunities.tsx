@@ -1,15 +1,15 @@
 export default function InfoOpportunities() {
     return (
         <div className="mt-16 max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center mb-8 text-(--text-primary)">
+          <h2 className="text-2xl font-bold text-center mb-8 text-(--text-primary) font-roboto-flex">
             Что вы получите
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Карточка статистики */}
             <div className="bg-(--bg-secondary) rounded-2xl p-5 border border-(--border) transition hover:scale-[1.02]">
               <div className="text-3xl mb-3">📊</div>
-              <h3 className="text-lg font-semibold text-(--text-primary)">Детальная статистика</h3>
-              <p className="text-sm text-(--text-secondary) mt-1">
+              <h3 className="text-[17px] font-semibold text-(--text-primary) font-roboto-flex">Детальная статистика</h3>
+              <p className="text-sm text-(--text-secondary) mt-1 font-roboto-flex">
                 Количество репозиториев, фолловеров, звёзд и многое другое.
               </p>
               <div className="mt-3 flex gap-3 text-xs text-(--text-secondary)">
@@ -20,10 +20,10 @@ export default function InfoOpportunities() {
             </div>
 
             {/* Карточка языков */}
-            <div className="bg-(--bg-secondary) rounded-2xl p-5 border border-(--border) transition hover:scale-[1.02]">
+            <div className="bg-(--bg-secondary) rounded-2xl p-5 border border-(--border) transition hover:scale-[1.02] font-roboto-flex">
               <div className="text-3xl mb-3">🥧</div>
-              <h3 className="text-lg font-semibold text-(--text-primary)">Языки программирования</h3>
-              <p className="text-sm text-(--text-secondary) mt-1">
+              <h3 className="text-[17px] font-semibold text-(--text-primary) font-roboto-flex">Языки программирования</h3>
+              <p className="text-sm text-(--text-secondary) mt-1 font-roboto-flex">
                 Круговая диаграмма с распределением языков по репозиториям.
               </p>
               <div className="mt-3 flex flex-wrap gap-2 text-xs">
@@ -36,8 +36,8 @@ export default function InfoOpportunities() {
             {/* Карточка коммитов */}
             <div className="bg-(--bg-secondary) rounded-2xl p-5 border border-(--border) transition hover:scale-[1.02]">
               <div className="text-3xl mb-3">📈</div>
-              <h3 className="text-lg font-semibold text-(--text-primary)">Активность коммитов</h3>
-              <p className="text-sm text-(--text-secondary) mt-1">
+              <h3 className="text-[17px] font-semibold text-(--text-primary) font-roboto-flex">Активность коммитов</h3>
+              <p className="text-sm text-(--text-secondary) mt-1 font-roboto-flex">
                 Линейный график коммитов.
               </p>
               <div className="mt-3 flex items-end gap-1 h-10">

@@ -9,14 +9,14 @@ export default function TopRepos({userRepos}: TopReposProps) {
 
     return (
         <div className="max-w-[10%] w-full items-center">
-            <p>Топ репозиториев:</p>
+            <p className="font-roboto-flex">Топ репозиториев:</p>
             <ol className="pl-3 flex flex-col gap-1.5">
                 {top7Repos.map((elem, index) => {
                     const num: number = index + 1
                     return (
                         <li className={`bg-(--rank-${num}) rounded-md p-2.5`} key={Math.random() * 199}>
-                            <p>{num}. {elem.name}</p>
-                            <p>⭐{elem.stargazers_count}</p>
+                            <p className="font-roboto-flex">{num}. {elem.name}</p>
+                            <p className="font-roboto-flex">⭐{elem.stargazers_count}</p>
                         </li>
                     )
                 })}

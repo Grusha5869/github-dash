@@ -20,7 +20,7 @@ export default function Home() {
           setValue={setValue}
           searchSubmit={searchSubmit}
         />
-        <p className="text-[13px] pl-4">Популярные: gaearon  Grusha5869  octocat  vercel</p>
+        <p className="text-[13px] pl-4 font-roboto-flex">Популярные: gaearon  Grusha5869  octocat  vercel</p>
         <div className="absolute top-3 right-3">
           <ThemeBtn />
         </div>

@@ -8,7 +8,7 @@ export default function ThemeBtn() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full bg-(--bg-secondary) w-15 h-10 hover:bg-(--bg-secondary-hover) transition-(--transition-default) cursor-pointer"
+      className="p-2 rounded-full bg-(--bg-secondary) w-15 h-10 hover:bg-(--bg-secondary-hover) transition-(--transition-default) cursor-pointer font-roboto-flex"
       aria-label="Переключить тему"
     >
       {isDark ? '🌞' : '🌙'}

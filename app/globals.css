@@ -48,16 +48,18 @@
   --rank-7: #FF8A65;
 
   --bg-secondary-hover: #212832;
-
-  --transition-default: 0.3s;
 }
 
 * {
   transition: var(--transition-default);
 }
 
+.font-roboto-flex {
+  font-family: var(--font-roboto-flex)
+}
+
 body {
-  background: var(--bg-gradient);
+  background: var(--bg-secondary);
   min-height: 100vh;
   color: var(--text-primary);
 }
@@ -72,8 +74,4 @@ body {
 
 .margin-0-auto {
   margin: 0 auto;
-}
-
-p, div, strong, ul, li {
-  transition: var(--transition-default);
 }

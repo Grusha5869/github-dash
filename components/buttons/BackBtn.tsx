@@ -10,7 +10,7 @@ export default function BackBtn() {
     return (
         <button 
             onClick={handleClick}
-            className="p-2 rounded-xl bg-(--bg-secondary) hover:bg-(--bg-secondary-hover) transition-(--transition-default) cursor-pointer"
+            className="p-2 rounded-xl bg-(--bg-secondary) hover:bg-(--bg-secondary-hover) transition-(--transition-default) cursor-pointer font-roboto-flex"
             aria-label="Вернуться назад"
         >Назад</button>
     )

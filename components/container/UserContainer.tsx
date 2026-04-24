@@ -4,6 +4,6 @@ type ContainerProps = {
 
 export default function UserContainer({children}: ContainerProps) {
   return (
-    <div className="p-3">{children}</div>
+    <div className="h-screen p-3 bg-(--bg-primary)">{children}</div>
   )
 }

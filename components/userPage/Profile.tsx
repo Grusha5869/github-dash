@@ -19,10 +19,10 @@ export default function Profile({userInfo}: ProfileProps) {
           className="w-37.5 h-37.5"
         />
         <div>
-          <strong>{userInfo.name || userInfo.login}</strong>
-          <p>@{userInfo.login} / {`${dayCreatedProfile}.${monthCreatedProfile}.${yearCreatedProfile}`}</p>
-          <p>{userInfo.bio}</p>
-          <a href={userInfo.html_url} rel="noopener noreferrer" target="_blank">Ссылка на гитхаб</a>
+          <strong className="font-roboto-flex">{userInfo.name || userInfo.login}</strong>
+          <p className="font-roboto-flex">@{userInfo.login} / {`${dayCreatedProfile}.${monthCreatedProfile}.${yearCreatedProfile}`}</p>
+          <p className="font-roboto-flex">{userInfo.bio}</p>
+          <a className="font-roboto-flex" href={userInfo.html_url} rel="noopener noreferrer" target="_blank">Ссылка на гитхаб</a>
         </div>
     </div>
   )
