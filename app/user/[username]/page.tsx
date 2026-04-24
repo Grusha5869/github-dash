@@ -18,7 +18,7 @@ export default async function Page({ params }: PageProps) {
 
     return (
         <UserContainer>
-            <div className="flex gap-10 mb-7">
+            <div className="flex gap-10 mb-7 max-lg:flex-col">
                 <Profile
                     userInfo={userInfo}
                 />

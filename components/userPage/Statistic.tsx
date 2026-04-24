@@ -30,7 +30,7 @@ export default function Statistic({userInfo, userRepos}: StatisticProps) {
   
 
   return (
-    <ul className="flex gap-5 items-center">
+    <ul className="flex gap-5 items-center max-2xl:flex-wrap">
       {statisticList.map(elem => 
         <li className="border-2 border-(--bg-secondary) rounded-md p-25-15 flex flex-col items-center gap-1" key={Math.random() * 199}>
           <p className="text-xl">{elem.title}</p>

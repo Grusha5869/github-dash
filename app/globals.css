@@ -52,13 +52,14 @@
   --transition-default: 0.3s;
 }
 
+* {
+  transition: var(--transition-default);
+}
+
 body {
-  /* background-color: var(--bg-primary); */
   background: var(--bg-gradient);
   min-height: 100vh;
   color: var(--text-primary);
-  transition: var(--transition-default);
-  overflow: hidden;
 }
 
 .p-25-15 {
