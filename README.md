@@ -1,4 +1,10 @@
 # Github Dashboard
+Ник: Grusha5869
+
+## 🚀 Online Demo
+
+🌐 [Открыть сайт](https://github-dash-six.vercel.app/)
+
 ## 🛠️ Технологии
 
 - TypeScript
@@ -8,12 +14,13 @@
 - JavaScript
 - tailwind
 
-## Запуск проекта
+## 🚀 Запуск
+```bash
+# Установка зависимостей
+npm install
 
+# Запуск в режиме разработки
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Сборка для продакшена
+npm run build
